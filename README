@@ -1,0 +1,33 @@
+# Veille Cloud
+
+Workflow de veille pour les SRE du Run Theodo : 5 articles par envoi, en DM Slack, pour inspirer des propositions aux clients cloud.
+
+## Fichiers
+
+- `PROMPT.md` : le prompt à donner à Claude (sélection, filtres, format du message).
+- `source.yaml` : sources RSS/Atom (`name`, `url`, `type`) et mots-clés à exclure (`exclude`, pour écarter les CVE et failles).
+
+## Fonctionnement
+
+1. Récupère les articles des 14 derniers jours de chaque source.
+2. Exclut les articles dont le sujet principal est une CVE/faille.
+3. Ignore les liens déjà envoyés (30 derniers messages du DM).
+4. Garde 5 articles actionnables pour des SRE (postmortems, architectures, outils, coûts, sécurité opérationnelle). Sont exclus : consommation et refroidissement de datacenters, résultats financiers, partenariats, IA sans angle infra.
+5. Envoie un seul DM Slack en français.
+
+## Format du message
+
+```
+# <emoji> Titre informatif
+1-2 phrases : ce qui s'est passé / la solution, et pourquoi c'est utile pour un client.
+_<lien|Source>_
+```
+
+Le titre est un heading H1 (`# `), la source est en italique. Cela suppose un envoi par un outil qui interprète le Markdown standard (le connecteur Slack MCP `slack_send_message` le fait). Le mrkdwn Slack classique n'affiche pas les headings.
+
+## Gérer les sources
+
+- Tester un flux avant de l'ajouter : `curl -sL -A "Mozilla/5.0" <url>` (code 200, `<item>` ou `<entry>` présents, date du dernier article récente).
+- Sources françaises prioritaires : Doctolib, Leboncoin, Alan, Clever Cloud, Scaleway, Sfeir.dev, Ippon.
+- Retirées car hors cible ou inactives : BlaBlaCar, Qonto, Criteo, OVHcloud (contenu surtout IA, partenariats ou datacenters).
+- Écartées car flux morts ou inaccessibles : Back Market, Swile, Dailymotion, Padok, Deezer.
