@@ -6,4 +6,11 @@ sources:
   - {name: SRE Weekly,            url: https://sreweekly.com/feed/, type: postmortems}
   - {name: CNCF Blog,             url: https://www.cncf.io/blog/feed/, type: solutions}
   - {name: danluu/post-mortems,   url: https://github.com/danluu/post-mortems/commits/master.atom, type: postmortems}
+  - {name: OVHcloud Blog,         url: https://blog.ovhcloud.com/feed/, type: architectures}
+  - {name: Scaleway Blog,         url: https://www.scaleway.com/en/blog/rss.xml, type: architectures}
+  - {name: Criteo Engineering,    url: https://medium.com/feed/criteo-engineering, type: solutions}
+  - {name: BlaBlaCar Engineering, url: https://medium.com/feed/blablacar, type: solutions}
+  - {name: Doctolib Engineering,  url: https://medium.com/feed/doctolib, type: solutions}
+  - {name: Leboncoin Engineering, url: https://medium.com/feed/leboncoin-engineering-blog, type: solutions}
+  - {name: Qonto Engineering,     url: https://medium.com/feed/qonto-way, type: solutions}
 exclude: [CVE, vulnerability, security advisory, patch Tuesday]
