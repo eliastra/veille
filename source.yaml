@@ -1,16 +1,17 @@
 sources:
   - {name: AWS Architecture Blog, url: https://aws.amazon.com/blogs/architecture/feed/, type: architectures}
   - {name: Google Cloud Blog,     url: https://cloudblog.withgoogle.com/products/gcp/rss/, type: architectures}
-  - {name: Cloudflare Blog,       url: https://blog.cloudflare.com/rss/, type: postmortems}
+  - {name: Cloudflare Post-mortems, url: https://blog.cloudflare.com/tag/post-mortem/rss/, type: postmortems}
   - {name: Azure Architecture,    url: https://azure.microsoft.com/en-us/blog/feed/, type: architectures}
   - {name: SRE Weekly,            url: https://sreweekly.com/feed/, type: postmortems}
   - {name: CNCF Blog,             url: https://www.cncf.io/blog/feed/, type: solutions}
   - {name: danluu/post-mortems,   url: https://github.com/danluu/post-mortems/commits/master.atom, type: postmortems}
-  - {name: OVHcloud Blog,         url: https://blog.ovhcloud.com/feed/, type: architectures}
   - {name: Scaleway Blog,         url: https://www.scaleway.com/en/blog/rss.xml, type: architectures}
-  - {name: Criteo Engineering,    url: https://medium.com/feed/criteo-engineering, type: solutions}
-  - {name: BlaBlaCar Engineering, url: https://medium.com/feed/blablacar, type: solutions}
   - {name: Doctolib Engineering,  url: https://medium.com/feed/doctolib, type: solutions}
   - {name: Leboncoin Engineering, url: https://medium.com/feed/leboncoin-engineering-blog, type: solutions}
-  - {name: Qonto Engineering,     url: https://medium.com/feed/qonto-way, type: solutions}
+  - {name: Alan Engineering,      url: https://medium.com/feed/alan, type: solutions}
+  - {name: Clever Cloud Blog,     url: https://www.clever-cloud.com/blog/feed/, type: solutions}
+  - {name: Sfeir.dev,             url: https://www.sfeir.dev/rss/, type: solutions}
+  - {name: Ippon Blog,            url: https://blog.ippon.fr/feed/, type: solutions}
+  - {name: Datadog Blog,          url: https://www.datadoghq.com/blog/index.xml, type: solutions}
 exclude: [CVE, vulnerability, security advisory, patch Tuesday]
