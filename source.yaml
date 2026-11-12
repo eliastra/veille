@@ -1,9 +1,9 @@
 sources:
   - {name: AWS Architecture Blog, url: https://aws.amazon.com/blogs/architecture/feed/, type: architectures}
-  - {name: Google Cloud Blog,     url: https://cloud.google.com/blog/products/gcp/rss, type: architectures}
+  - {name: Google Cloud Blog,     url: https://cloudblog.withgoogle.com/products/gcp/rss/, type: architectures}
   - {name: Cloudflare Blog,       url: https://blog.cloudflare.com/rss/, type: postmortems}
-  - {name: Azure Architecture,    url: https://techcommunity.microsoft.com/..., type: architectures}
+  - {name: Azure Architecture,    url: https://azure.microsoft.com/en-us/blog/feed/, type: architectures}
   - {name: SRE Weekly,            url: https://sreweekly.com/feed/, type: postmortems}
   - {name: CNCF Blog,             url: https://www.cncf.io/blog/feed/, type: solutions}
-  - {name: danluu/post-mortems,   url: https://github.com/danluu/post-mortems, type: postmortems}
+  - {name: danluu/post-mortems,   url: https://github.com/danluu/post-mortems/commits/master.atom, type: postmortems}
 exclude: [CVE, vulnerability, security advisory, patch Tuesday]
